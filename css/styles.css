@@ -1,0 +1,13 @@
+:root {
+    /* CSS HEX */
+    --contrast: #f3e8eeff;
+    --card: #bacdb0ff;
+    --secondary: #729b79ff;
+    --primary: #475b63ff;
+    --footer: #2e2c2fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
