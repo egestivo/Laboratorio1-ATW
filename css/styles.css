@@ -1,13 +1,81 @@
 :root {
-    /* CSS HEX */
+    /* Tema claro */
     --contrast: #f3e8eeff;
     --card: #bacdb0ff;
     --secondary: #729b79ff;
     --primary: #475b63ff;
     --footer: #2e2c2fff;
+
+    /* Tema oscuro */
+    --base: #170312ff;
+    --secondary: #33032fff;
+    --primary: #531253ff;
+    --contrast: #a0acadff;
+    --card: #97d8b2ff;
+
 }
 
 * {
     box-sizing: border-box;
 }
 
+/*Definimos 3 filas del cuerpo principal de la página*/
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#main-header {
+    background-color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    color: var(--contrast);
+}
+
+#logo {
+    padding: 3rem;
+}
+
+#main-header nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 0px 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+#main-header nav ul li a {
+    text-decoration: none;
+    color: var(--contrast);
+    font-size: 1.2em;
+    transition: 0.3s ease-out;
+}
+
+/* selling section */
+#selling-sec {
+    background-color: var(--secondary);
+    padding: 1rem;
+    margin: 1rem 0px;
+    text-align: center;
+    overflow: hidden;
+    color: var(--contrast)
+}
+
+
+/* Cards enveloper */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+/* Footer Class */
+
+#main-footer {
+    background-color: var(--footer);
+    padding: 1rem;
+    text-align: center;
+    color: var(--contrast);
+}
