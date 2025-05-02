@@ -7,11 +7,11 @@
     --footer: #2e2c2fff;
 
     /* Tema oscuro */
-    --base: #170312ff;
-    --secondary: #33032fff;
-    --primary: #531253ff;
-    --contrast: #a0acadff;
-    --card: #97d8b2ff;
+    --dark-base: #170312ff;
+    --dark-secondary: #33032fff;
+    --dark-primary: #531253ff;
+    --dark-contrast: #a0acadff;
+    --dark-card: #97d8b2ff;
 
 }
 
@@ -27,21 +27,25 @@ body {
 
 #main-header {
     background-color: var(--primary);
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
     color: var(--contrast);
 }
 
 #logo {
-    padding: 3rem;
+    padding: 1rem;
 }
 
 #main-header nav ul li {
     list-style: none;
     display: inline;
-    margin: 0px 3em;
+    margin: 0rem 3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5em;
+}
+
+nav {
+    padding: 0rem 0rem 1rem 0rem;
 }
 
 #main-header nav ul li a {
@@ -49,6 +53,7 @@ body {
     color: var(--contrast);
     font-size: 1.2em;
     transition: 0.3s ease-out;
+    margin: 10rem 0px;
 }
 
 /* selling section */
@@ -61,18 +66,15 @@ body {
     color: var(--contrast)
 }
 
-
 /* Cards enveloper */
-.cards {
+.productos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     gap: 1rem;
     padding: 1rem;
 }
 
-
 /* Footer Class */
-
 #main-footer {
     background-color: var(--footer);
     padding: 1rem;
