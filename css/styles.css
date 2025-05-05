@@ -67,6 +67,11 @@ nav {
     vertical-align: super;
 }
 
+#main-header nav ul li a:hover {
+    color: var(--dark-secondary);
+    transform: scale(1.05);
+}
+
 /* selling section */
 #selling-sec {
     background-color: var(--secondary);
@@ -120,10 +125,12 @@ h2 {
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-out;
+    filter: brightness(100%);
 }
 
 .card img:hover {
-    filter: brightness(90%);
+    filter: brightness(75%);
     transition: 0.3s ease-out;
 }
 
